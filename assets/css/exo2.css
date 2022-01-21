@@ -1,0 +1,13 @@
+@import url(general.css);
+
+@font-face {
+    font-family:digit;
+    src: url(../fonts/digital-7.regular.ttf);
+}
+
+.content{
+    font-family: "digit";
+    text-align: center;
+    font-size:80px;
+    color:green;
+}
