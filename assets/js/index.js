@@ -34,7 +34,7 @@ const exoList = [
     {
         titre:"FizzBuzz++",
         description:"Lorem ipsum",
-        fichier:'exo3.html',
+        fichier:'exo4.html',
         image:'exo34.png'
     }
 ];
