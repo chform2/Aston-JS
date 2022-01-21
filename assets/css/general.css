@@ -14,6 +14,7 @@ nav.top{
     border:1px solid silver;
     padding:15px 10px;
     background-color:#006EA3;
+    line-height: 1.5rem;
 }
 nav.top a, nav.top a:hover, nav.top a:visited, nav.top a:focus{
  color:#fff;

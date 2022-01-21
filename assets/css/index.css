@@ -1,4 +1,12 @@
 @import url("general.css");
+
+/* le coeur dans la desc des cartes */
+.red{
+    vertical-align: middle;
+    font-size: 2em;
+    color: red
+}
+
 section.content{
     display:flex;
     flex-direction:row;
@@ -11,6 +19,7 @@ section.content div.carte + .carte{
 }
 section.content div.carte{
     width:auto;
+    min-width:20vh;
     border:1px solid silver;
     border-radius: 3px;
 }
@@ -21,20 +30,22 @@ section.content div.carte ul{
     padding-left:35px;
 }
 section.content div.carte a, section.content div.carte a:hover, section.content div.carte a:visited, section.content div.carte a:focus{
+    display: block;
     color:#fff;
     font-weight: bold;
     background-color: #006EA3;
     padding:5px 10px;
     border-radius:1rem;
     text-decoration: none;
-    float: right;
+    text-align: center;
     transition:all 1000ms ease-in-out;
-    border-color:1px solid #006EA3;
+    border:1px solid #006EA3;
+    float: right;
 }
 section.content div.carte a:hover{
     background-color:#F5F5F5;
     color:#006EA3;
-    border-color:1px solid silver;
+    border:1px solid silver;
 }
 section.content div.carte img{
     display:block;
@@ -42,6 +53,12 @@ section.content div.carte img{
     border-bottom:1px solid silver;
     border-radius-top-left:3px;
     border-radius-top-right:3px;
+}
+
+@media screen and (max-width:790px){
+    section.content{
+        flex-direction: column;
+    }
 }
 
 

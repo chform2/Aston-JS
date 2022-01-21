@@ -1,3 +1,4 @@
+// définitions
 const outputElement = document.querySelector("section.content");
 const navElement = document.querySelector("nav.top");
 
@@ -33,8 +34,17 @@ const exoList = [
 
     {
         titre:"FizzBuzz++",
-        description:"Lorem ipsum",
-        fichier:'exo3.html',
+        description:`
+        <p>Vous créerez un nouveau FizzBuzz, sauf que :</p> 
+        <ul>
+            <li>Une case affichera le chiffre, Fizz, Buzz ou FizzBuzz s'afficheront au dessus du chiffre, en grand</li>
+            <li>Les valeurs s'afficheront une à une.</li>
+            <li>Un boutton next permettra de passer à la valeur suivante</li>
+            <li>Un bouton "prev" permettra d'afficher la valeur précédente.</li>
+        </ul>
+        <p>Recyclage de script : 1 point de récup <span class="red">♥️</span></p>
+        `,
+        fichier:'exo4.html',
         image:'exo34.png'
     }
 ];
@@ -50,7 +60,7 @@ exoList.forEach(objet => {
         <div class="carte" data-fichier="${objet.fichier}">
             <img src="assets/img/${objet.image}" alt="Illustration de la thématique de la carte" title="${objet.titre}">
             <p class="desc">${objet.description}</p>
-            <a href='${objet.fichier}'>Go voir l'exo bro'</a>
+            <a href='${objet.fichier}'>Voir l'exo</a>
         </div>
     `;
 });
