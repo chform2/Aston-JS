@@ -1,0 +1,23 @@
+@import url(general.css);
+section.content, button{
+    text-align: center;
+    font-size:40px;
+}
+button, button:hover, button:visited, button:focus{
+    color:#fff;
+    font-weight: bold;
+    background-color: #006EA3;
+    padding:5px 10px;
+    border-radius:1rem;
+    text-decoration: none;
+    cursor:pointer;
+    transition:all 1000ms ease-in-out;
+    border-color:1px solid #006EA3;
+    outline:none;
+    border:1px solid silver;
+}
+button:hover{
+    background-color:#F5F5F5;
+    color:#006EA3;
+    border-color:1px solid silver;
+}

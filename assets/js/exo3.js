@@ -7,13 +7,13 @@ let outputElement = document.querySelector("section.content");
  */
 function typeFB(n){
     if (n % 15 == 0){
-        outputElement.innerHTML += `${n}: FizzBuzz<br>`;
+        return `FizzBuzz<br>`;
     }else if (n % 3 == 0){
-        outputElement.innerHTML += `${n}: Fizz<br>`;
+        return `Fizz<br>`;
     }else if (n % 5 == 0){
-        outputElement.innerHTML += `${n}: Buzz<br>`;
+        return `Buzz`;
     }else{
-        outputElement.innerHTML += `${n}: ----<br>`;
+        return `----`;
     }
 }
 
@@ -22,7 +22,7 @@ function typeFB(n){
  */
 function fizzBuzz(){
     for (var i = 1; i <= 100; i++) {
-        typeFB(i);
+        outputElement.innerHTML += `<p>${i}: ${typeFB(i)}</p>`;
     }
 }
 
