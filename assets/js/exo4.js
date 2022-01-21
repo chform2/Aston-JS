@@ -1,3 +1,6 @@
+/**
+ * Défintions
+ */
 const counterElement = document.querySelector(".counter");
 const textElement = document.querySelector(".text");
 const downElement = document.querySelector("button.down");
