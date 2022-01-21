@@ -1,0 +1,47 @@
+@import url("general.css");
+section.content{
+    display:flex;
+    flex-direction:row;
+    padding:15px;
+}
+
+/* CARTES */
+section.content div.carte + .carte{
+    margin-left:15px;
+}
+section.content div.carte{
+    width:auto;
+    border:1px solid silver;
+    border-radius: 3px;
+}
+section.content div.carte .desc{
+    padding:5px;
+}
+section.content div.carte ul{
+    padding-left:35px;
+}
+section.content div.carte a, section.content div.carte a:hover, section.content div.carte a:visited, section.content div.carte a:focus{
+    color:#fff;
+    font-weight: bold;
+    background-color: #006EA3;
+    padding:5px 10px;
+    border-radius:1rem;
+    text-decoration: none;
+    float: right;
+    transition:all 1000ms ease-in-out;
+    border-color:1px solid #006EA3;
+}
+section.content div.carte a:hover{
+    background-color:#F5F5F5;
+    color:#006EA3;
+    border-color:1px solid silver;
+}
+section.content div.carte img{
+    display:block;
+    width:100%;
+    border-bottom:1px solid silver;
+    border-radius-top-left:3px;
+    border-radius-top-right:3px;
+}
+
+

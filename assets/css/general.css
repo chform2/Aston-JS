@@ -1,0 +1,27 @@
+/* GENERAL */
+*, body, html{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #fff;
+    color:#393333;
+}
+h1{
+    text-align: center;
+}
+nav.top{
+    border:1px solid silver;
+    padding:15px 10px;
+    background-color:#006EA3;
+}
+nav.top a, nav.top a:hover, nav.top a:visited, nav.top a:focus{
+ color:#fff;
+ text-decoration: none;
+}
+nav.top a:hover{
+    border-bottom:1px #fff dotted;
+}
+nav.top a + a{
+    margin-left:10px;
+}
